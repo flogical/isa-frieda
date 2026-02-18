@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Carousel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400&display=swap" rel="stylesheet"/>
+  
+  <link href="css/carousel.css" rel="stylesheet">
+</head>
+<body>
+  <div id="siteWrapper" class="clearfix site-wrapper">
+
+    <header>
+      <!-- for menu mobile nav...prolly -->
+      <div class="header-menu-nav-folder-content">
+          <!-- Menu Navigation -->
+          <div class="header-menu-nav-wrapper">
+            <div class="container header-menu-nav-item header-menu-nav-item--collection header-menu-nav-item--active header-menu-nav-item--homepage">
+                <a
+                  href="/"
+                  aria-current="page"
+                  >
+                  <div class="header-menu-nav-item-content">
+                      Main Page
+                  </div>
+                </a>
+            </div>
+            <div class="container header-menu-nav-item header-menu-nav-item--collection">
+                <a
+                  href="/portfolio/homes.html"
+                  >
+                  <div class="header-menu-nav-item-content">
+                      Homes
+                  </div>
+                </a>
+            </div>
+            <div class="container header-menu-nav-item header-menu-nav-item--collection">
+                <a
+                  href="/portfolio/homes/project1.html"
+                  >
+                  <div class="header-menu-nav-item-content">
+                      Additions and Small Projects
+                  </div>
+                </a>
+            </div>
+            <div class="container header-menu-nav-item header-menu-nav-item--collection">
+                <a
+                  href="/portfolio/homes/project1.html"
+                  >
+                  <div class="header-menu-nav-item-content">
+                      Multi-Unit Projects
+                  </div>
+                </a>
+            </div>
+            <div class="container header-menu-nav-item header-menu-nav-item--collection">
+                <a
+                  href="/team.html"
+                  >
+                  <div class="header-menu-nav-item-content">
+                      Our Team
+                  </div>
+                </a>
+            </div>
+            <div class="container header-menu-nav-item header-menu-nav-item--collection">
+                <a
+                  href="/resources"
+                  >
+                  <div class="header-menu-nav-item-content">
+                      Resources
+                  </div>
+                </a>
+            </div>
+            <div class="container header-menu-nav-item header-menu-nav-item--collection">
+                <a
+                  href="/contact-us.html"
+                  >
+                  <div class="header-menu-nav-item-content">
+                      Contact Us
+                  </div>
+                </a>
+            </div>
+          </div>
+      </div>
+    </header>
+    <main id="page" class="container" role="main">
+      <article>
+        <section>
+          <p class="label">Gallery</p>
+          <div class="carousel-wrapper">
+
+            <!-- Left Arrow -->
+            <button class="arrow arrow-left" id="prev" aria-label="Previous">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+
+              <div class="carousel" id="carousel">
+
+                <div class="slide active">
+                  <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&auto=format&fit=crop" alt="Mountain Landscape"/>
+                  <div class="slide-caption">
+                    <h2>Alpine Serenity</h2>
+                    <p>The mountains at dusk</p>
+                  </div>
+                </div>
+
+              <div class="slide">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900&auto=format&fit=crop" alt="Tropical Beach"/>
+                <div class="slide-caption">
+                  <h2>Endless Horizon</h2>
+                  <p>Where the ocean meets the sky</p>
+                </div>
+              </div>
+
+              <div class="slide">
+                <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=900&auto=format&fit=crop" alt="Forest Path"/>
+                <div class="slide-caption">
+                  <h2>Into the Woods</h2>
+                  <p>Ancient light through the canopy</p>
+                </div>
+              </div>
+
+              <div class="slide">
+                <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=900&auto=format&fit=crop" alt="Desert Dunes"/>
+                <div class="slide-caption">
+                  <h2>Golden Silence</h2>
+                  <p>Dunes carved by wind and time</p>
+                </div>
+              </div>
+
+          </div>
+
+          <!-- Right Arrow -->
+          <button class="arrow arrow-right" id="next" aria-label="Next">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+
+          <div class="dots" id="dots"></div>
+          <div class="counter"><span id="current">1</span> / <span id="total">4</span></div>
+        </section>
+        
+        <section>
+          page content--two columns?
+        </section>
+
+      </article>
+    </main>
+    
+    <footer>
+    </footer>
+  </div>
+  
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const dotsContainer = document.getElementById('dots');
+    const currentEl = document.getElementById('current');
+    const total = slides.length;
+    document.getElementById('total').textContent = total;
+
+    let current = 0;
+
+    // Build dots
+    slides.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.className = 'dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+      dot.addEventListener('click', () => goTo(i));
+      dotsContainer.appendChild(dot);
+    });
+
+    const dots = document.querySelectorAll('.dot');
+
+    function goTo(index) {
+      slides[current].classList.remove('active');
+      slides[current].classList.add('exit-left');
+      setTimeout(() => slides[current < index ? current : index].classList.remove('exit-left'), 650);
+
+      dots[current].classList.remove('active');
+      current = (index + total) % total;
+      slides[current].classList.add('active');
+      dots[current].classList.add('active');
+      currentEl.textContent = current + 1;
+
+      // Clean up exit class
+      setTimeout(() => {
+        slides.forEach(s => s.classList.remove('exit-left'));
+      }, 700);
+    }
+
+    document.getElementById('prev').addEventListener('click', () => goTo(current - 1));
+    document.getElementById('next').addEventListener('click', () => goTo(current + 1));
+
+    // Keyboard navigation
+    document.addEventListener('keydown', e => {
+      if (e.key === 'ArrowLeft')  goTo(current - 1);
+      if (e.key === 'ArrowRight') goTo(current + 1);
+    });
+  </script>
+</body>
+
+<script src="js/main.js"></script>
+</html>
