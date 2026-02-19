@@ -25,9 +25,10 @@ body {
 }
 
 #logo {
-	width:100vw;
-	margin: 25px auto 25px auto;
+	/*width:100vw;
+	margin: 25px auto 25px auto;*/
 	background: url("../assets/logo.svg") no-repeat;
+    background-image: url("../assets/logo.svg");
 }
 
 nav {
