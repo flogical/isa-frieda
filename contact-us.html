@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Carousel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400&display=swap" rel="stylesheet"/>
+  
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/carousel.css" rel="stylesheet">
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+
+</head>
+<body>
+  <div id="siteWrapper" class="clearfix site-wrapper">
+
+    <header>
+      <!-- for menu mobile nav...prolly -->
+
+      <div class="logo" id="logo"></div>
+
+      <div class="header-menu-nav-folder-content">
+          <!-- Menu Navigation -->
+        <div class="header-menu-nav-wrapper">
+          <nav class="header-nav-list">
+            <div class="container header-menu-nav-item header-menu-nav-item--collection header-menu-nav-item--active header-menu-nav-item--homepage">
+              <a
+                href="/"
+                aria-current="page"
+                >
+                <div class="header-menu-nav-item-content">
+                    Main Page
+                </div>
+              </a>
+            </div>
+            <div class="container header-menu-nav-item header-menu-nav-item--collection">
+                <a
+                  href="/homes/homes.html"
+                  >
+                  <div class="header-menu-nav-item-content">
+                      Homes
+                  </div>
+                </a>
+            </div>
+            <div class="container header-menu-nav-item header-menu-nav-item--collection">
+                <a
+                  href="/portfolio/portfolio1.html"
+                  >
+                  <div class="header-menu-nav-item-content">
+                      Additions and Small Projects
+                  </div>
+                </a>
+            </div>
+            <div class="container header-menu-nav-item header-menu-nav-item--collection">
+                <a
+                  href="/portfolio/portfolio2.html"
+                  >
+                  <div class="header-menu-nav-item-content">
+                      Multi-Unit Projects
+                  </div>
+                </a>
+            </div>
+            <div class="container header-menu-nav-item header-menu-nav-item--collection">
+                <a
+                  href="/team.html"
+                  >
+                  <div class="header-menu-nav-item-content">
+                      Our Team
+                  </div>
+                </a>
+            </div>
+            <!-- <div class="container header-menu-nav-item header-menu-nav-item--collection">
+                <a
+                  href="/resources"
+                  >
+                  <div class="header-menu-nav-item-content">
+                      Resources
+                  </div>
+                </a>
+            </div> needed?!?-->
+            <div class="container header-menu-nav-item header-menu-nav-item--collection">
+                <a
+                  href="/contact-us.html"
+                  >
+                  <div class="header-menu-nav-item-content">
+                      Contact Us
+                  </div>
+                </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="page" class="container" role="main">
+      <article>
+        <section>
+          <p class="label">Contact Us</p>
+
+ 
+        </section>
+        
+       
+        <section id="contact">
+          <h1> We'd love to hear from you. Contacts us anytime ! Let us know a bit about your project.  </h1>
+          <form id="form">        
+            <p id="returnmessage"></p>
+            <input type="text" id="name" placeholder="Name"/><span class="description required">(required)</span>
+            <input type="text" name="gotcha" class="gotcha" />
+                
+            <input type="text" id="email" placeholder="Email"/><span class="description required">(required)</span>
+                
+            <input type="text" id="object" placeholder="Object"/> <!--would be dropdown instead-->
+                
+            <textarea id="message" placeholder="Message"></textarea>
+              
+            <div id="btn">
+              <svg class="draw" height="50" width="100" shape-rendering="optimizeSpeed">
+                <path d="M50 48 L3 48 L3 2 L50 2 " stroke="#000"  stroke-width="2" fill="none" />
+                <path d="M49 48 L98 48 L98 2 L50 2 " stroke="#000"  stroke-width="2" fill="none" />
+              </svg>
+              <span><input type="button" id="submit" value="Send"/></span>
+            </div>
+          </form>
+           
+          <p id="loader" style="display:none;"></p>
+        </section>
+
+      </article>
+    </main>
+    
+    <footer>
+      <section>
+        
+      </section>
+    </footer>
+  </div>
+  
+  <script>
+    //umm could put the contact function here instead of in main.js maybe?...
+  </script>
+</body>
+
+<script src="js/main.js"></script>
+</html>

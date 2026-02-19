@@ -6,25 +6,31 @@
   <title>Image Carousel</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400&display=swap" rel="stylesheet"/>
   
-  <link href="../css/carousel.css" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/homes.css" rel="stylesheet">
+
 </head>
 <body>
   <div id="siteWrapper" class="clearfix site-wrapper">
 
     <header>
       <!-- for menu mobile nav...prolly -->
+
+      <div class="logo" id="logo"></div>
+
       <div class="header-menu-nav-folder-content">
           <!-- Menu Navigation -->
-          <div class="header-menu-nav-wrapper">
+        <div class="header-menu-nav-wrapper">
+          <nav class="header-nav-list">
             <div class="container header-menu-nav-item header-menu-nav-item--collection header-menu-nav-item--active header-menu-nav-item--homepage">
-                <a
-                  href="/"
-                  aria-current="page"
-                  >
-                  <div class="header-menu-nav-item-content">
-                      Main Page
-                  </div>
-                </a>
+              <a
+                href="/"
+                aria-current="page"
+                >
+                <div class="header-menu-nav-item-content">
+                    Main Page
+                </div>
+              </a>
             </div>
             <div class="container header-menu-nav-item header-menu-nav-item--collection">
                 <a
@@ -80,94 +86,49 @@
                   </div>
                 </a>
             </div>
-          </div>
+          </nav>
+        </div>
       </div>
     </header>
+
     <main id="page" class="container" role="main">
       <article>
+        <section class="pre-content">
+          <h3 style="text-align: center; white-space: pre-wrap; transition-timing-function: ease; transition-duration: 1.5s; transition-delay: 0.4s;" class="preFade fadeIn">
+            We wanted to showcase some homes we have worked on for our valued clients. These home range from concepts, to homes awaiting construction soon. 
+          </h3>
+        </section>
+
         <section>
-          <p class="label">Gallery</p>
-          <div class="carousel-wrapper">
+          <div class="content">
+            <a class="grid-item" href="/homes/project-four-l3zw3-mpech">
+              <div class="grid-image">
+                <div class="grid-image-inner-wrapper">
+                  
+                  <img data-src="https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139768410-LOUC9PBJYEDOZ6IXMUCZ/Enscape_2025-02-09-17-14-43_Front+View.png" data-image="https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139768410-LOUC9PBJYEDOZ6IXMUCZ/Enscape_2025-02-09-17-14-43_Front+View.png" data-image-dimensions="1920x1080" data-image-focal-point="0.5,0.5" alt="Multigenerational semi detached home - QC" data-load="false" elementtiming="nbf-portfolio-grid-overlay" src="https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139768410-LOUC9PBJYEDOZ6IXMUCZ/Enscape_2025-02-09-17-14-43_Front+View.png" width="1920" height="1080" sizes="(max-width: 767px) 100vw, 50vw" style="display:block;object-position: 50% 50%" srcset="https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139768410-LOUC9PBJYEDOZ6IXMUCZ/Enscape_2025-02-09-17-14-43_Front+View.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139768410-LOUC9PBJYEDOZ6IXMUCZ/Enscape_2025-02-09-17-14-43_Front+View.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139768410-LOUC9PBJYEDOZ6IXMUCZ/Enscape_2025-02-09-17-14-43_Front+View.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139768410-LOUC9PBJYEDOZ6IXMUCZ/Enscape_2025-02-09-17-14-43_Front+View.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139768410-LOUC9PBJYEDOZ6IXMUCZ/Enscape_2025-02-09-17-14-43_Front+View.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139768410-LOUC9PBJYEDOZ6IXMUCZ/Enscape_2025-02-09-17-14-43_Front+View.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139768410-LOUC9PBJYEDOZ6IXMUCZ/Enscape_2025-02-09-17-14-43_Front+View.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+                </div>
+              </div>
+              <div class="portfolio-overlay"></div>
+              <div class="portfolio-text">
+                <h3 class="portfolio-title preFade fadeIn" style="transition-timing-function: ease; transition-duration: 1.5s; transition-delay: 0.44s;">Multigenerational semi detached home - QC</h3>
+              </div>
+            </a>
 
-            <!-- Left Arrow -->
-            <button class="arrow arrow-left" id="prev" aria-label="Previous">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="15 18 9 12 15 6"/></svg>
-            </button>
-
-              <div class="carousel" id="carousel">
-
-                <div class="slide active">
-                  <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&auto=format&fit=crop" alt="Mountain Landscape"/>
-                  <div class="slide-caption">
-                    <h2>Alpine Serenity</h2>
-                    <p>The mountains at dusk</p>
+            <a class="grid-item" href="/homes/project-one-f5w4d-jbgj9">
+                <div class="grid-image">
+                  <div class="grid-image-inner-wrapper">
+                    
+                    <img data-src="https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139599705-1I1586BPRT2J9SKUOS4I/Enscape_2025-02-09-14-18-09_Part+2+-+Front.png" data-image="https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139599705-1I1586BPRT2J9SKUOS4I/Enscape_2025-02-09-14-18-09_Part+2+-+Front.png" data-image-dimensions="1920x1080" data-image-focal-point="0.4842454195022583,0.6567866802215576" alt="Detached homes - Alta Vista - Ottawa" data-load="false" elementtiming="nbf-portfolio-grid-overlay" src="https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139599705-1I1586BPRT2J9SKUOS4I/Enscape_2025-02-09-14-18-09_Part+2+-+Front.png" width="1920" height="1080" sizes="(max-width: 767px) 100vw, 50vw" style="display:block;object-position: 48.42454195022583% 65.67866802215576%" srcset="https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139599705-1I1586BPRT2J9SKUOS4I/Enscape_2025-02-09-14-18-09_Part+2+-+Front.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139599705-1I1586BPRT2J9SKUOS4I/Enscape_2025-02-09-14-18-09_Part+2+-+Front.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139599705-1I1586BPRT2J9SKUOS4I/Enscape_2025-02-09-14-18-09_Part+2+-+Front.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139599705-1I1586BPRT2J9SKUOS4I/Enscape_2025-02-09-14-18-09_Part+2+-+Front.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139599705-1I1586BPRT2J9SKUOS4I/Enscape_2025-02-09-14-18-09_Part+2+-+Front.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139599705-1I1586BPRT2J9SKUOS4I/Enscape_2025-02-09-14-18-09_Part+2+-+Front.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139599705-1I1586BPRT2J9SKUOS4I/Enscape_2025-02-09-14-18-09_Part+2+-+Front.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
                   </div>
                 </div>
-
-              <div class="slide">
-                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900&auto=format&fit=crop" alt="Tropical Beach"/>
-                <div class="slide-caption">
-                  <h2>Endless Horizon</h2>
-                  <p>Where the ocean meets the sky</p>
+                <div class="portfolio-overlay"></div>
+                <div class="portfolio-text">
+                  <h3 class="portfolio-title preFade fadeIn" style="transition-timing-function: ease; transition-duration: 1.5s; transition-delay: 0.46s;">Detached homes - Alta Vista - Ottawa</h3>
                 </div>
-              </div>
-
-              <div class="slide">
-                <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=900&auto=format&fit=crop" alt="Forest Path"/>
-                <div class="slide-caption">
-                  <h2>Into the Woods</h2>
-                  <p>Ancient light through the canopy</p>
-                </div>
-              </div>
-
-              <div class="slide">
-                <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=900&auto=format&fit=crop" alt="Desert Dunes"/>
-                <div class="slide-caption">
-                  <h2>Golden Silence</h2>
-                  <p>Dunes carved by wind and time</p>
-                </div>
-              </div>
-
-          </div>
-
-          <!-- Right Arrow -->
-          <button class="arrow arrow-right" id="next" aria-label="Next">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="9 18 15 12 9 6"/></svg>
-          </button>
-
-          <div class="dots" id="dots"></div>
-          <div class="counter"><span id="current">1</span> / <span id="total">4</span></div>
-        </section>
-        
-        <section>
-          <div class="content-main">
-            <div>
-              <h2 style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 1.5s; transition-delay: 0.378261s;" class="preFade fadeIn">
-                Who is Symbi-ARC Studio Inc. (SASI) 
-              </h2>
-            </div>
-
-            <div class="content-main who-is">
-              <p class="sqsrte-large preFade fadeIn" style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 1.5s; transition-delay: 0.391304s;">
-                Who is Symbi-ARC Studio Inc.?
-              </p>
-              <p class="preFade fadeIn" style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 1.5s; transition-delay: 0.404348s;">
-                We are an architecture firm based in Carleton Place, Ontario. 
-              </p>
-              <p class="" style="white-space:pre-wrap;">Our name is the first thing you probably notice about us, and we want to make an impression. Here is what our name is all about:</p>
-              <p class="" style="white-space:pre-wrap;">Symbi-ARC Studio Inc</p>
-              <p class="" style="white-space:pre-wrap;">Symbi: We believe architecture is about time and place, its meant to be <strong><em>symbi</em></strong>otic to those things. It should not only fit in with those things, but also make them better.</p>
-              <p class="" style="white-space:pre-wrap;">ARC: This is meant to symbolize the <strong><em>arc</em></strong>hitecture itself, no matter the scale. Our commitment is to do our absolute best to make it memorable and make sure it fits into the whole, like the arc of a circle.</p>
-              <p class="" style="white-space:pre-wrap;">Studio: This meant to represent the people, both within and outside the firm. It is meant to be inclusive of all the people who encounter our work (Project team, clients, end-user, passerby’s, etc.)</p>
-              <p class="" style="white-space:pre-wrap;">Inc.: The simple answer is that it tells the world that we are incorporated. We’ve gone through all the legal requirements to make sure of that! But there is more to why we included it in our name, we wanted it to symbolize the incorporation of all of the things mentioned above into one entity.</p>
-              <p class="" style="white-space:pre-wrap;">And finally, you’ll notice that our acronym is <strong>SASI.</strong> This was not by accident! It’s meant to remind us to take our work seriously, but not ourselves.</p>
-              <p class="" style="white-space:pre-wrap;">We look forward to serving the national capital region (NCR), with a focus on the western townships where we are based. </p>
-
-            </div>
+              </a>
 
           </div>
         </section>
-
       </article>
     </main>
     
@@ -178,53 +139,5 @@
     </footer>
   </div>
   
-  <script>
-    const slides = document.querySelectorAll('.slide');
-    const dotsContainer = document.getElementById('dots');
-    const currentEl = document.getElementById('current');
-    const total = slides.length;
-    document.getElementById('total').textContent = total;
-
-    let current = 0;
-
-    // Build dots
-    slides.forEach((_, i) => {
-      const dot = document.createElement('button');
-      dot.className = 'dot' + (i === 0 ? ' active' : '');
-      dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
-      dot.addEventListener('click', () => goTo(i));
-      dotsContainer.appendChild(dot);
-    });
-
-    const dots = document.querySelectorAll('.dot');
-
-    function goTo(index) {
-      slides[current].classList.remove('active');
-      slides[current].classList.add('exit-left');
-      setTimeout(() => slides[current < index ? current : index].classList.remove('exit-left'), 650);
-
-      dots[current].classList.remove('active');
-      current = (index + total) % total;
-      slides[current].classList.add('active');
-      dots[current].classList.add('active');
-      currentEl.textContent = current + 1;
-
-      // Clean up exit class
-      setTimeout(() => {
-        slides.forEach(s => s.classList.remove('exit-left'));
-      }, 700);
-    }
-
-    document.getElementById('prev').addEventListener('click', () => goTo(current - 1));
-    document.getElementById('next').addEventListener('click', () => goTo(current + 1));
-
-    // Keyboard navigation
-    document.addEventListener('keydown', e => {
-      if (e.key === 'ArrowLeft')  goTo(current - 1);
-      if (e.key === 'ArrowRight') goTo(current + 1);
-    });
-  </script>
 </body>
-
-<script src="../js/main.js"></script>
 </html>
