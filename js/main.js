@@ -54,7 +54,7 @@ jQuery(document).ready(function($){
 			success: function(result){
 				//$('#cava').text(result);
 				console.log('RESULT= '+result);
-				return_message[0].innerHTML = "Thank you for your submission!";
+				return_message[0].innerHTML = "Thank you for your request!";
 				return_message[0].style.backgroundColor = '#68d99c';
 				doReset();
 				setTimeout(clearReturn, 2000);
