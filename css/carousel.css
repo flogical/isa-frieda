@@ -12,7 +12,7 @@
 
 .carousel-wrapper {
     position: relative;
-    width: min(680px, 100%);
+    margin: 25px auto 25px auto;
 }
 
 .carousel {

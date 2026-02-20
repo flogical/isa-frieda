@@ -8,7 +8,7 @@ jQuery.fn.redraw = function() {
 jQuery(document).ready(function($){
 	jQuery('body').redraw();
 
-    console.log("TEeeeest")
+    //console.log("TEeeeest")
 
 	//Use jquery instead of document.getElementById? >>meh
 	function doReset(){
