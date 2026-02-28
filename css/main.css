@@ -29,9 +29,40 @@ body {
 	/*width:100vw;
 	margin: 25px auto 25px auto;
 	background: url("../assets/logo.svg") no-repeat;
-    background-image: url("../assets/logo.svg");*/
+    background-image: url("../assets/logo.svg");
     max-width: 100vw;
-    margin: 25px auto 25px auto;
+    margin: 25px auto 25px auto;*/
+    
+    width:130px;
+	height: 80px;
+	margin: 25px auto 25px auto;
+	background: url("../assets/logo.svg") no-repeat;
+    background-size: contain;
+    padding-bottom: 1%;
+}
+
+.logoC {
+    width: 100%;
+    margin: 0 auto;
+}
+
+ @media (max-width: 680px) {
+      .nav-links { display: none; }
+      .nav-toggle { display: flex; }
+      nav { position: relative; } /* so mobile-menu positions correctly */
+    }
+
+.containerL {
+  box-shadow: 0 0 0 10px #b6bdc3;
+  width: 50%;
+  background: #fff;
+  margin: 0 auto;
+  /* just to get an apsect ratio same as the SVG's: */
+  padding-top: 48%; 
+  height: 0; 
+  background-image: url(../assets/logo.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 nav {
