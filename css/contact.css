@@ -62,7 +62,18 @@ input:focus, textarea:focus {
 
 #email {
 	margin-left: 50px;
+	@media (max-width: 1300px) {
+    	margin-left: 0;
+  }
 }
+
+@media (max-width: 680px) {
+	#email {
+		margin-left: 0;
+	}
+}
+
+
 
 #message{
 	resize:none;
@@ -82,7 +93,7 @@ input:focus, textarea:focus {
 	font-weight: 300;
 }
 
-#btn{
+#btn {
 	position: relative;
 	width: 100px; /*in % ? todo */
 	height: 50px;

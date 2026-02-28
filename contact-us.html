@@ -8,6 +8,7 @@
   
   <link href="css/main.css" rel="stylesheet">
   <link href="css/contact.css" rel="stylesheet">
+  <link href="css/navMenu.css" rel="stylesheet">
 
   <script src="js/jquery-3.7.1.min.js"></script>
 
@@ -18,10 +19,6 @@
     <header>
       <div class="logoC" >
         <a href="./" aria-current="page" >
-          <!--<object type="image/svg+xml" data="assets/logo.svg" style="width: 100%; height: auto;">
-            <h3>Fallback text</h3>
-          </object>
-          <img src="assets/logo.svg" alt="Logo" height="50%">-->
           <div class="logog" id="logo"></div>
         </a>
       </div>
@@ -30,69 +27,32 @@
           <!-- Menu Navigation -->
         <div class="header-menu-nav-wrapper">
           <nav class="header-nav-list">
-            <div class="container header-menu-nav-item header-menu-nav-item--collection header-menu-nav-item--active header-menu-nav-item--homepage">
-              <a
-                href="about.html"
-                aria-current="page"
-                >
-                <div class="header-menu-nav-item-content">
-                    About
-                </div>
-              </a>
+            <div class="nav-inner">
+
+              <a href="./" class="logos">FAMC<span>Inc.</span></a>
+
+              <!-- Desktop nav links -->
+              <ul class="nav-links">
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="homes/homes.html">Small Projects</a></li>
+                <li><a href="portfolio/portfolio1.html">Major Projects</a></li>
+                <li><a href="contact-us.html" class="nav-cta">Contact</a></li>
+              </ul>
+
+              <!-- Mobile caret toggle -->
+              <button class="nav-toggle" id="toggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Toggle menu">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                  <span class="caret"></span>
+              </button>
+
             </div>
-            <div class="container header-menu-nav-item header-menu-nav-item--collection">
-                <a
-                  href="homes/homes.html"
-                  >
-                  <div class="header-menu-nav-item-content">
-                      Homes
-                  </div>
-                </a>
-            </div>
-            <div class="container header-menu-nav-item header-menu-nav-item--collection">
-                <a
-                  href="portfolio/portfolio1.html"
-                  >
-                  <div class="header-menu-nav-item-content">
-                      Small Projects
-                  </div>
-                </a>
-            </div>
-            <div class="container header-menu-nav-item header-menu-nav-item--collection">
-                <a
-                  href="portfolio/portfolio2.html"
-                  >
-                  <div class="header-menu-nav-item-content">
-                      Major Projects
-                  </div>
-                </a>
-            </div>
-            <!--<div class="container header-menu-nav-item header-menu-nav-item--collection">
-                <a
-                  href="team.html"
-                  >
-                  <div class="header-menu-nav-item-content">
-                      Our Team
-                  </div>
-                </a>
-            </div>
-             <div class="container header-menu-nav-item header-menu-nav-item--collection">
-                <a
-                  href="/resources"
-                  >
-                  <div class="header-menu-nav-item-content">
-                      Resources
-                  </div>
-                </a>
-            </div> -->
-            <div class="container header-menu-nav-item header-menu-nav-item--collection">
-                <a
-                  href="contact-us.html"
-                  >
-                  <div class="header-menu-nav-item-content">
-                      Contact Us
-                  </div>
-                </a>
+
+            <!-- Mobile dropdown -->
+            <div class="mobile-menu" id="mobileMenu" role="navigation">
+              <a href="about.html" class="active">About</a>
+              <a href="homes/homes.html">Small Projects</a>
+              <a href="portfolio/portfolio1.html">Major Projects</a>
+              <a href="contact-us.html" class="mobile-cta">Contact</a>
             </div>
           </nav>
         </div>
@@ -149,4 +109,5 @@
 </body>
 
 <script src="js/main.js"></script>
+<script src="js/menu.js"></script>
 </html>
