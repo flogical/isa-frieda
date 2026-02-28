@@ -1,0 +1,230 @@
+
+.header-menu-nav-folder-content {
+	/*margin-bottom: 20em;
+    width: 80%; 900px */
+    text-align: center;
+    flex: 0 0 100%;
+    margin: 1vw 0 0; 
+}
+
+.header-menu-nav-wrapper {
+    justify-content: center;
+}
+
+.header-nav-list {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.header-menu-nav-item {
+    margin-left: 1.4vw;
+    margin-right: 1.4vw;
+}
+
+.header-menu-nav-item-content {
+    color: var(--text);
+    text-decoration: none;
+
+}
+
+nav {
+    padding-bottom: 1%;
+    top: 0;
+    z-index: 100;
+    /*position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--nav-bg);
+    height: var(--nav-h);
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    box-shadow: 0 1px 0 var(--border);*/
+}
+
+.nav-inner {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logos {
+    font-family: 'Fraunces', serif;
+    font-size: 1.35rem;
+    color: var(--text);
+    text-decoration: none;
+    letter-spacing: -0.01em;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.logos span {
+    color: var(--accent);
+    font-style: italic;
+}
+
+/* Desktop links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--muted);
+    text-decoration: none;
+    /*font-size: 0.875rem;
+    font-weight: 400;*/
+    letter-spacing: 0.02em;
+    padding: 0.45rem 0.85rem;
+    border-radius: 4px;
+    transition: color 0.2s, background 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--text);
+    background: rgba(255,255,255,0.06);
+}
+
+.nav-links a.active {
+    color: var(--accent);
+}
+/* CTA button */
+.nav-cta {
+    background: var(--accent);
+    color: #1a1a18 !important;
+    font-weight: 500 !important;
+    padding: 0.45rem 1.1rem !important;
+    border-radius: 4px !important;
+}
+
+.nav-cta:hover {
+    background: #c4845a !important;
+    color: #1a1a18 !important;
+}
+    
+/* ─── CARET / HAMBURGER TOGGLE ─── */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--text);
+    cursor: pointer;
+    padding: 0.4rem 0.65rem;
+    border-radius: 4px;
+    align-items: center;
+    gap: 6px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.nav-toggle:hover {
+    border-color: var(--accent);
+    color: var(--text);
+}
+
+/* Caret icon */
+.caret {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(45deg) translateY(-2px);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.nav-toggle[aria-expanded="true"] .caret {
+    transform: rotate(225deg) translateY(-2px);
+}
+
+/* ─── MOBILE MENU ─── */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background: var(--nav-bg);
+    border-top: 1px solid var(--border);
+    padding: 0.5rem 1.5rem 1rem;
+    position: absolute;
+    top: var(--nav-h);
+    left: 0; right: 0;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+    animation: slideDown 0.25s ease forwards;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.mobile-menu.open {
+    display: flex;
+}
+
+.mobile-menu a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border);
+    transition: color 0.2s, padding-left 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-menu a:last-child {
+    border-bottom: none;
+}
+
+.mobile-menu a:hover {
+    color: var(--text);
+    padding-left: 6px;
+}
+
+.mobile-menu a.active { color: var(--accent); }
+
+.mobile-menu a.mobile-cta {
+    margin-top: 0.5rem;
+    background: var(--accent);
+    color: #1a1a18;
+    padding: 0.7rem 1rem;
+    border-radius: 4px;
+    border: none;
+    font-weight: 500;
+    justify-content: center;
+}
+
+.mobile-menu a.mobile-cta:hover {
+    background: #c4845a;
+    padding-left: 1rem;
+}
+
+
+@media (min-width: 680px) {
+    /* hide mobile-menu on large displays 
+    .nav-links, .nav-toggle  { display: none; }*/
+    .logos  { display: none; }
+}
+
+/* show mobile-menu  */
+@media (max-width: 680px) {
+    .nav-links { display: none; }
+    .nav-toggle { display: flex; }
+    nav { position: relative; } /* so mobile-menu positions correctly */
+    .header-nav-list {
+        display: block;
+        flex-wrap: wrap;
+    }
+}

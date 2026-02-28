@@ -2,11 +2,14 @@
 
 :root {
     --bg: #000000;
+    --nav-bg: #1a1a18;
     --surface: #161616;
     --accent: #c9a96e;
     --text: #f0ebe3;
     --muted: #6b6560;
+    --border: rgba(247,244,239,0.1);
     --radius: 2px;
+    --nav-h: 64px;
 }
 
 body {
@@ -23,6 +26,16 @@ body {
     background-image:
     radial-gradient(ellipse at 20% 50%, rgba(201,169,110,0.04) 0%, transparent 60%),
     radial-gradient(ellipse at 80% 20%, rgba(201,169,110,0.03) 0%, transparent 50%);
+}
+
+img {
+  /*max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto; responsive */
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1; /* Square images */
 }
 
 #logo {
@@ -46,12 +59,6 @@ body {
     margin: 0 auto;
 }
 
- @media (max-width: 680px) {
-      .nav-links { display: none; }
-      .nav-toggle { display: flex; }
-      nav { position: relative; } /* so mobile-menu positions correctly */
-    }
-
 .containerL {
   box-shadow: 0 0 0 10px #b6bdc3;
   width: 50%;
@@ -65,45 +72,20 @@ body {
   background-repeat: no-repeat;
 }
 
-nav {
-    padding-bottom: 1%;
-}
 
 .container {
     margin: 0 auto;
 }
 
-.header-menu-nav-folder-content {
-	/*margin-bottom: 20em;
-    width: 80%; 900px */
-    text-align: center;
-    flex: 0 0 100%;
-    margin: 1vw 0 0; 
-}
-
-.header-menu-nav-wrapper {
-    justify-content: center;
-}
-
-.header-nav-list {
-    display: inline-flex;
-    flex-wrap: wrap;
-}
-
-.header-menu-nav-item {
-    margin-left: 1.4vw;
-    margin-right: 1.4vw;
-}
-
-.header-menu-nav-item-content {
-    color: var(--text);
-    text-decoration: none;
-
-}
-
 .content-wrapper {
     padding-top: 6.6vmax;
     padding-bottom: 6.6vmax;
+}
+
+.pre-content {
+    justify-content: center;
+    padding-top: calc(10vmax / 10);
+    padding-bottom: calc(10vmax / 10);
 }
 
 .content {
@@ -114,7 +96,23 @@ nav {
 }
 
 
+/*.grid-item {
+    display: inline-block;To control size? 
+    max-width: 50%;
+}
+
+.grid-image-inner-wrapper {
+    height:65px;
+    width:68px
+}*/
 
 .who-answer {
     padding: 1%;
+}
+
+.sqsContent {
+    white-space: pre-wrap;
+    transition-timing-function: ease;
+    transition-duration: 1.5s; 
+    transition-delay: 0.343s
 }

@@ -8,6 +8,7 @@
   
   <link href="css/main.css" rel="stylesheet">
   <link href="css/carousel.css" rel="stylesheet">
+  <link href="css/navMenu.css" rel="stylesheet">
   <!--<script src="js/jquery-3.7.1.min.js"></script>-->
 
 </head>
@@ -32,15 +33,13 @@
         </a>
       </div>
 
-    
-
       <div class="header-menu-nav-folder-content">
           <!-- Menu Navigation -->
         <div class="header-menu-nav-wrapper">
-          <nav class="header-nav-list">
+          <!--<nav class="header-nav-list">
             <div class="container header-menu-nav-item header-menu-nav-item--collection header-menu-nav-item--active header-menu-nav-item--homepage">
               <a
-                href=""
+                href="about.html"
                 aria-current="page"
                 >
                 <div class="header-menu-nav-item-content">
@@ -62,7 +61,7 @@
                   href="portfolio/portfolio1.html"
                   >
                   <div class="header-menu-nav-item-content">
-                      Additions and Small Projects
+                      Small Projects
                   </div>
                 </a>
             </div>
@@ -71,28 +70,10 @@
                   href="portfolio/portfolio2.html"
                   >
                   <div class="header-menu-nav-item-content">
-                      Multi-Unit Projects
+                      Major Projects
                   </div>
                 </a>
             </div>
-            <!--<div class="container header-menu-nav-item header-menu-nav-item--collection">
-                <a
-                  href="team.html"
-                  >
-                  <div class="header-menu-nav-item-content">
-                      Our Team
-                  </div>
-                </a>
-            </div>
-             <div class="container header-menu-nav-item header-menu-nav-item--collection">
-                <a
-                  href="/resources"
-                  >
-                  <div class="header-menu-nav-item-content">
-                      Resources
-                  </div>
-                </a>
-            </div> -->
             <div class="container header-menu-nav-item header-menu-nav-item--collection">
                 <a
                   href="contact-us.html"
@@ -102,7 +83,36 @@
                   </div>
                 </a>
             </div>
-          </nav>
+          </nav>-->
+            <nav class="header-nav-list">
+              <div class="nav-inner">
+
+                <a href="#" class="logos">FAMC<span>Inc.</span></a>
+
+                <!-- Desktop nav links -->
+                <ul class="nav-links">
+                  <li><a href="about.html" class="active">About</a></li>
+                  <li><a href="portfolio/portfolio1.html">Small Projects</a></li>
+                  <li><a href="portfolio/portfolio2.html">Major Projects</a></li>
+                  <li><a href="contact-us.html" class="nav-cta">Contact</a></li>
+                </ul>
+
+                <!-- Mobile caret toggle -->
+                <button class="nav-toggle" id="toggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Toggle menu">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                   <span class="caret"></span>
+                </button>
+
+              </div>
+
+              <!-- Mobile dropdown -->
+              <div class="mobile-menu" id="mobileMenu" role="navigation">
+                <a href="about.html" class="active">About</a>
+                <a href="portfolio/portfolio1.html">Small Projects</a>
+                <a href="portfolio/portfolio2.html">Major Projects</a>
+                <a href="contact-us.html" class="mobile-cta">Contact</a>
+              </div>
+            </nav>
         </div>
       </div>
     </header>
@@ -179,25 +189,31 @@
             <div class="content">
               <div class="content-main who-question">
                 <h2 style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 1.5s; transition-delay: 0.378261s;" class="preFade fadeIn">
-                  Who is FAMC Inc.
+                  Who is FAMC Construction.
                 </h2>
               </div>
 
               <div class="content-main who-answer">
                 <p class="sqsrte-large preFade fadeIn" style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 1.5s; transition-delay: 0.391304s;">
-                  Who is FAMC Inc.?
+                  Who is FAMC Construction?
                 </p>
                 <p class="preFade fadeIn" style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 1.5s; transition-delay: 0.404348s;">
-                  We are an architecture firm based in Carleton Place, Ontario. 
+                  FAMC is a construction company based in Crysler, Ontario.
                 </p>
-                <p class="" style="white-space:pre-wrap;">Our name is the first thing you probably notice about us, and we want to make an impression. Here is what our name is all about:</p>
-                <p class="" style="white-space:pre-wrap;">FAMC Inc</p>
-                <p class="" style="white-space:pre-wrap;">Symbi: We believe architecture is about time and place, its meant to be <strong><em>symbi</em></strong>otic to those things. It should not only fit in with those things, but also make them better.</p>
-                <p class="" style="white-space:pre-wrap;">ARC: This is meant to symbolize the <strong><em>arc</em></strong>hitecture itself, no matter the scale. Our commitment is to do our absolute best to make it memorable and make sure it fits into the whole, like the arc of a circle.</p>
-                <p class="" style="white-space:pre-wrap;">Studio: This meant to represent the people, both within and outside the firm. It is meant to be inclusive of all the people who encounter our work (Project team, clients, end-user, passerby’s, etc.)</p>
-                <p class="" style="white-space:pre-wrap;">Inc.: The simple answer is that it tells the world that we are incorporated. We’ve gone through all the legal requirements to make sure of that! But there is more to why we included it in our name, we wanted it to symbolize the incorporation of all of the things mentioned above into one entity.</p>
-                <p class="" style="white-space:pre-wrap;">And finally, you’ll notice that our acronym is <strong>SASI.</strong> This was not by accident! It’s meant to remind us to take our work seriously, but not ourselves.</p>
-                <p class="" style="white-space:pre-wrap;">We look forward to serving the national capital region (NCR), with a focus on the western townships where we are based. </p>
+                <p class="" style="white-space:pre-wrap;">
+                  We specialize in offering construction management services to commercial and multi residential clients.
+                <p class="" style="white-space:pre-wrap;">
+                  Symbi: We believe architecture is about time and place, its meant to be <strong><em>symbi</em></strong>otic to those things. It should not only fit in with those things, but also make them better.
+                </p>
+                <p class="" style="white-space:pre-wrap;">
+                  ARC: This is meant to symbolize the <strong><em>arc</em></strong>hitecture itself, no matter the scale. Our commitment is to do our absolute best to make it memorable and make sure it fits into the whole, like the arc of a circle.
+                </p>
+                <p class="" style="white-space:pre-wrap;">
+                  Our experience, team focused solutions oriented to build and operated with the highest integrity by providing the best quality project on time and on budget in a safety manner
+                </p>
+                <p class="" style="white-space:pre-wrap;">
+                  We look forward to serving the national capital region (NCR), with a focus on the western townships where we are based. 
+                </p>
 
               </div>
 
@@ -264,4 +280,5 @@
 </body>
 
 <!--<script src="js/main.js"></script>-->
+<script src="js/menu.js"></script>
 </html>

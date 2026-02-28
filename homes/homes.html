@@ -7,20 +7,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400&display=swap" rel="stylesheet"/>
   
   <link href="../css/main.css" rel="stylesheet">
-  <link href="../css/homes.css" rel="stylesheet">
+  <link href="../css/navMenu.css" rel="stylesheet">
 
 </head>
 <body>
   <div id="siteWrapper" class="clearfix site-wrapper">
 
     <header>
-      <!-- for menu mobile nav...prolly 
-
-      <div class="logo" id="logo">
-        <a href="../" aria-current="page" >
-          <img src="../assets/logo.svg" alt="Logo" height="50%">
-        </a>
-      </div>-->
       <div class="logoC" >
         <a href="../" aria-current="page" >
           <!--<object type="image/svg+xml" data="assets/logo.svg" style="width: 100%; height: auto;">
@@ -35,10 +28,10 @@
       <div class="header-menu-nav-folder-content">
           <!-- Menu Navigation -->
         <div class="header-menu-nav-wrapper">
-          <nav class="header-nav-list">
+          <!--<nav class="header-nav-list">
             <div class="container header-menu-nav-item header-menu-nav-item--collection header-menu-nav-item--active header-menu-nav-item--homepage">
               <a
-                href="../"
+                href="../about.html"
                 aria-current="page"
                 >
                 <div class="header-menu-nav-item-content">
@@ -60,7 +53,7 @@
                   href="../portfolio/portfolio1.html"
                   >
                   <div class="header-menu-nav-item-content">
-                      Additions and Small Projects
+                      Small Projects
                   </div>
                 </a>
             </div>
@@ -69,28 +62,10 @@
                   href="../portfolio/portfolio2.html"
                   >
                   <div class="header-menu-nav-item-content">
-                      Multi-Unit Projects
+                      Major Projects
                   </div>
                 </a>
             </div>
-            <!--<div class="container header-menu-nav-item header-menu-nav-item--collection">
-                <a
-                  href="../team.html"
-                  >
-                  <div class="header-menu-nav-item-content">
-                      Our Team
-                  </div>
-                </a>
-            </div>
-            <div class="container header-menu-nav-item header-menu-nav-item--collection">
-                <a
-                  href="/resources"
-                  >
-                  <div class="header-menu-nav-item-content">
-                      Resources
-                  </div>
-                </a>
-            </div>-->
             <div class="container header-menu-nav-item header-menu-nav-item--collection">
                 <a
                   href="../contact-us.html"
@@ -100,7 +75,36 @@
                   </div>
                 </a>
             </div>
-          </nav>
+          </nav>-->
+            <nav>
+              <div class="nav-inner">
+
+                <a href="#" class="logos">FAMC<span>Inc.</span></a>
+
+                <!-- Desktop nav links -->
+                <ul class="nav-links">
+                  <li><a href="../about.html" class="active">About</a></li>
+                  <li><a href="../portfolio/portfolio1.html">Small Projects</a></li>
+                  <li><a href="../portfolio/portfolio2.html">Major Projects</a></li>
+                  <li><a href="../contact-us.html" class="nav-cta">Contact</a></li>
+                </ul>
+
+                <!-- Mobile caret toggle -->
+                <button class="nav-toggle" id="toggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Toggle menu">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                   <span class="caret"></span>
+                </button>
+
+              </div>
+
+              <!-- Mobile dropdown -->
+              <div class="mobile-menu" id="mobileMenu" role="navigation">
+                <a href="#" class="active">About</a>
+                <a href="../portfolio/portfolio1.html">Small Projects</a>
+                <a href="../portfolio/portfolio2.html">Major Projects</a>
+                <a href="../contact-us.html" class="mobile-cta">Contact</a>
+              </div>
+            </nav>
         </div>
       </div>
     </header>
@@ -118,8 +122,9 @@
             <a class="grid-item" href="../homes/project1.html">
               <div class="grid-image">
                 <div class="grid-image-inner-wrapper">
-                  
-                  <img data-src="https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139768410-LOUC9PBJYEDOZ6IXMUCZ/Enscape_2025-02-09-17-14-43_Front+View.png" 
+                  <img src="../assets/crane.jpg" alt="Breaking Borders Logo">
+
+                  <!--<img data-src="https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139768410-LOUC9PBJYEDOZ6IXMUCZ/Enscape_2025-02-09-17-14-43_Front+View.png" 
                   data-image="https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139768410-LOUC9PBJYEDOZ6IXMUCZ/Enscape_2025-02-09-17-14-43_Front+View.png"
                   data-image-dimensions="1920x1080" 
                   data-image-focal-point="0.5,0.5" 
@@ -129,20 +134,22 @@
                   width="1920" height="1080" sizes="(max-width: 767px) 100vw, 50vw" 
                   style="display:block;object-position: 50% 50%"
                   srcset="https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139768410-LOUC9PBJYEDOZ6IXMUCZ/Enscape_2025-02-09-17-14-43_Front+View.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139768410-LOUC9PBJYEDOZ6IXMUCZ/Enscape_2025-02-09-17-14-43_Front+View.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139768410-LOUC9PBJYEDOZ6IXMUCZ/Enscape_2025-02-09-17-14-43_Front+View.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139768410-LOUC9PBJYEDOZ6IXMUCZ/Enscape_2025-02-09-17-14-43_Front+View.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139768410-LOUC9PBJYEDOZ6IXMUCZ/Enscape_2025-02-09-17-14-43_Front+View.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139768410-LOUC9PBJYEDOZ6IXMUCZ/Enscape_2025-02-09-17-14-43_Front+View.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139768410-LOUC9PBJYEDOZ6IXMUCZ/Enscape_2025-02-09-17-14-43_Front+View.png?format=2500w 2500w" 
-                  loading="lazy" decoding="async" data-loader="sqs">
+                  loading="lazy" decoding="async" data-loader="sqs">-->
                 </div>
               </div>
-              <div class="portfolio-overlay"></div>
+              
               <div class="portfolio-text">
-                <h3 class="portfolio-title preFade fadeIn" style="transition-timing-function: ease; transition-duration: 1.5s; transition-delay: 0.44s;">Multigenerational semi detached home - QC</h3>
+                <h3 class="portfolio-title preFade fadeIn" style="transition-timing-function: ease; transition-duration: 1.5s; transition-delay: 0.44s;">
+                  Multigenerational semi detached home - QC
+                </h3>
               </div>
             </a>
 
             <a class="grid-item" href="../homes/project2.html">
                 <div class="grid-image">
                   <div class="grid-image-inner-wrapper">
-                    
-                    <img data-src="https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139599705-1I1586BPRT2J9SKUOS4I/Enscape_2025-02-09-14-18-09_Part+2+-+Front.png" 
+                    <img src="../assets/towers.jpg" alt="Breaking Borders Logo">
+                    <!-- height="65" width="68" <img data-src="https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139599705-1I1586BPRT2J9SKUOS4I/Enscape_2025-02-09-14-18-09_Part+2+-+Front.png" 
                     data-image="https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139599705-1I1586BPRT2J9SKUOS4I/Enscape_2025-02-09-14-18-09_Part+2+-+Front.png" 
                     data-image-dimensions="1920x1080" 
                     data-image-focal-point="0.4842454195022583,0.6567866802215576" 
@@ -152,7 +159,7 @@
                     width="1920" height="1080" sizes="(max-width: 767px) 100vw, 50vw" 
                     style="display:block;object-position: 48.42454195022583% 65.67866802215576%" 
                     srcset="https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139599705-1I1586BPRT2J9SKUOS4I/Enscape_2025-02-09-14-18-09_Part+2+-+Front.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139599705-1I1586BPRT2J9SKUOS4I/Enscape_2025-02-09-14-18-09_Part+2+-+Front.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139599705-1I1586BPRT2J9SKUOS4I/Enscape_2025-02-09-14-18-09_Part+2+-+Front.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139599705-1I1586BPRT2J9SKUOS4I/Enscape_2025-02-09-14-18-09_Part+2+-+Front.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139599705-1I1586BPRT2J9SKUOS4I/Enscape_2025-02-09-14-18-09_Part+2+-+Front.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139599705-1I1586BPRT2J9SKUOS4I/Enscape_2025-02-09-14-18-09_Part+2+-+Front.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/6613052fd211636e194de9fe/1739139599705-1I1586BPRT2J9SKUOS4I/Enscape_2025-02-09-14-18-09_Part+2+-+Front.png?format=2500w 2500w" 
-                    loading="lazy" decoding="async" data-loader="sqs">
+                    loading="lazy" decoding="async" data-loader="sqs">-->
                   </div>
                 </div>
                 <div class="portfolio-overlay"></div>
@@ -161,7 +168,7 @@
                     Detached homes - Alta Vista - Ottawa
                   </h3>
                 </div>
-              </a>
+            </a>
 
           </div>
         </section>
@@ -176,4 +183,5 @@
   </div>
   
 </body>
+<script src="../js/menu.js"></script>
 </html>
