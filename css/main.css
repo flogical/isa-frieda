@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /*justify-content: center; */
     font-family: 'Raleway', sans-serif;
     color: var(--text);
     padding: 2rem;
@@ -52,6 +52,17 @@ img {
 	background: url("../assets/logo.svg") no-repeat;
     background-size: contain;
     padding-bottom: 1%;
+}
+
+
+.label {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.3em;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
 }
 
 .logoC {
@@ -95,7 +106,6 @@ img {
     gap: 10px; /* Space between columns */
 }
 
-
 /*.grid-item {
     display: inline-block;To control size? 
     max-width: 50%;
@@ -106,14 +116,27 @@ img {
     width:68px
 }*/
 
+.content-about p {
+    white-space: normal !important;
+}
+
+
+/*
+.pre-content > p {
+    text-align: justify;
+    white-space: normal !important;
+}
+    
+.content-mains > p {
+    text-align: justify;
+    white-space: normal !important;
+} */
+
 .sqs-content-reach a{
     text-align: right;
     text-decoration: none;
 }
 
-.sqsContentP {
-    white-space: pre-wrap;
-}
 
 .who-answer {
     padding: 1%;
