@@ -64,7 +64,7 @@ img {
   width: 50%;
   background: #fff;
   margin: 0 auto;
-  /* just to get an apsect ratio same as the SVG's: */
+  /* just to get an aspect ratio same as the SVG's: */
   padding-top: 48%; 
   height: 0; 
   background-image: url(../assets/logo.svg);
@@ -105,6 +105,15 @@ img {
     height:65px;
     width:68px
 }*/
+
+.sqs-content-reach a{
+    text-align: right;
+    text-decoration: none;
+}
+
+.sqsContentP {
+    white-space: pre-wrap;
+}
 
 .who-answer {
     padding: 1%;

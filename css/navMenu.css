@@ -221,6 +221,7 @@ nav {
 /* show mobile-menu  */
 @media (max-width: 680px) {
     .nav-links { display: none; }
+    .who-question { display: none; } /* hide extra */
     .nav-toggle { display: flex; }
     nav { position: relative; } /* so mobile-menu positions correctly */
     .header-nav-list {
