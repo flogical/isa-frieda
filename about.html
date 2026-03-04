@@ -8,6 +8,7 @@
   
   <link href="css/main.css" rel="stylesheet">
   <link href="css/navMenu.css" rel="stylesheet">
+  <link href="css/fade.css" rel="stylesheet">
 </head>
 <body>
   <div id="siteWrapper" class="clearfix site-wrapper">
@@ -44,8 +45,15 @@
 
               <!-- Mobile caret toggle -->
               <button class="nav-toggle" id="toggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Toggle menu">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                <!--<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                  <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                </svg>-->
                   <span class="caret"></span>
+                  <span class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
               </button>
 
             </div>
@@ -75,37 +83,41 @@
               <div class="contsent">
                 <div>
                   <div class="sqs-html-content" data-sqsp-text-block-content=""><!-- style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 1.5s; transition-delay: 0.377143s;"-->
-                    <h3 class="sqsContent preFade fadeIn">Fred Cyamweshi </h3>
+                    <h3 class="sqsContent preFade fadeIn from-left delay-1">Fred Cyamweshi </h3>
                   </div>
 
                   <div class="sqs-html-content" data-sqsp-text-block-content="">
-                    <p class="sqsContent sqsrte-large preFade fadeIn">P. Eng, CCA, LEED</p>
+                    <p class="sqsContent sqsrte-large preFade fadeIn from-right delay-1">P. Eng, CCA, LEED</p>
                   </div>
                 </div>
 
+                <div class="divider fadeIn"></div>
+
                 <div>
                   <div class="sqs-content-reach sqs-html-content" data-sqsp-text-block-content="">
-                    <p class="sqsContent sqsrte-large preFade fadeIn">
+                    <p class="sqsContent sqsrte-large preFade fadeIn delay-2">
                       <a href="mailto:famcconstruction@gmail.com?" target="_blank">fred@Famcconstruction.ca</a></p>
                   </div>
                   
                   <div class="sqs-content-reach sqs-html-content" data-sqsp-text-block-content="">
-                    <p class="sqsContent sqsrte-large preFade fadeIn">
+                    <p class="sqsContent sqsrte-large preFade fadeIn delay-2">
                       <a href="https://www.linkedin.com/in/florent-muyango/" target="_blank">LinkedIn</a></p>
                   </div>
                 </div>
                 
+                <div class="divider fadeIn"></div>
+
                 <div class="content-about who-answer">
                   <div class="sqs-html-content" data-sqsp-text-block-content="">
                     <p
-                     class="sqsContent preFade fadeIn">
+                     class="sqsContent preFade fadeIn delay-1">
                       With over 15 years of construction experience as an accomplished Superintendent with excellent knowledge of
                       managing the day-to-day activities on site. Fred has worked on a wide variety of projects, and his experience includes developing implementation plans to ensure project success including achieving financial targets, accomplishing project
                       milestones, fostering teamwork and building alliances with various project stakeholders including subcontractors and
                       governments bodies.
                     </p>
                     <div class="sqsContent">
-                      <p class="preFade fadeIn">
+                      <p class="preFade fadeIn delay-2">
                       Fred is a focused individual, which allows him to achieve his goals, especially evident in time challenged and/or complex projects.
                       He feels it is fundamentally important to understand projects at a holistic level and takes the time to learn each building system, facilitating strong and knowledgeable leadership on site. His enthusiasm, strong work ethic, leadership and approach to teamwork consistently nurture positive morale on-site, resulting in a safe and productive environment and
                       the meeting of each critical milestone. 
@@ -113,13 +125,13 @@
                     </div>
                     
                     <div class="sqsContent">
-                      <p class="sqsContent preFade fadeIn">
+                      <p class="sqsContent preFade fadeIn delay-3">
                       Fred’s excellent rapport with clients, consultants, local trades and contractors alike makes him an ideal Site Superintendent for large and/or complicated projects.
                       </p>
                     </div>
                     
                     
-                    <p class="sqsContent preFade fadeIn">
+                    <p class="sqsContent preFade fadeIn delay-4">
                       Additionally, Fred holds a Bachelor of Applied Science Civil Engineering (Co-op), Structural and Geotechnical Engineering.
                     </p>
                   </div>
@@ -153,7 +165,24 @@
       </section>
     </footer>
   </div>
-  
+
+  <script>
+    //////fade-in text
+    const observer = new IntersectionObserver((entries) => {
+      //console.log("weeee", entries.length)
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target); // animate once only
+        }
+      });
+    }, {
+      threshold: 0.15  // trigger when 15% of element is visible
+    });
+
+    // oldie> .fade-in
+    document.querySelectorAll('.fadeIn').forEach(el => observer.observe(el));
+  </script>
 </body>
 <script src="js/menu.js"></script>
 </html>

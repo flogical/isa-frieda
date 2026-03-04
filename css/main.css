@@ -6,6 +6,7 @@
     --surface: #161616;
     --accent: #c9a96e;
     --text: #f0ebe3;
+    --umm: #fff;
     --muted: #6b6560;
     --border: rgba(247,244,239,0.1);
     --radius: 2px;
@@ -147,4 +148,13 @@ img {
     transition-timing-function: ease;
     transition-duration: 1.5s; 
     transition-delay: 0.343s
+}
+
+
+footer {
+    text-align: center;
+    padding: 3rem 2rem;
+    font-size: 0.75rem;
+    color: #b0a89e;
+    letter-spacing: 0.1em;
 }

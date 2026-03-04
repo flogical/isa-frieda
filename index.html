@@ -9,6 +9,7 @@
   <link href="css/main.css" rel="stylesheet">
   <link href="css/carousel.css" rel="stylesheet">
   <link href="css/navMenu.css" rel="stylesheet">
+  <link href="css/fade.css" rel="stylesheet">
   <!--<script src="js/jquery-3.7.1.min.js"></script>-->
 
 </head>
@@ -47,8 +48,15 @@
 
                 <!-- Mobile caret toggle -->
                 <button class="nav-toggle" id="toggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Toggle menu">
-                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                  <!--<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                  </svg>-->
                   <span class="caret"></span>
+                  <span class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
                 </button>
 
               </div>
@@ -134,29 +142,29 @@
           <div class="content-wrapper">
             <div class="content">
               <div class="content-main">
-                <h2 class="preFade fadeIn"><!-- style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 1.5s; transition-delay: 0.378261s;"-->
+                <h2 class="preFade fadeIn from-left delay-1"><!-- style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 1.5s; transition-delay: 0.378261s;"-->
                   Who is FAMC Construction.
                 </h2>
               </div>
 
               <div class="content-main who-answer">
-                <p class="who-question sqsContent preFade fadeIn">
+                <p class="who-question sqsContent preFade fadeIn from-right delay-1">
                   Who is FAMC Construction?
                 </p>
-                <p class="sqsContents preFade fadeIn">
+                <p class="sqsContents preFade fadeIn delay-2">
                   FAMC is a construction company based in Crysler, Ontario.
                 </p>
 
-                <div class="pre-content">
-                  <p>
+                <div class="pre-content fadeIn delay-3">
+                  <p><!-- class="preFade fadeIn" -->
                     We specialize in offering construction management services to commercial and multi residential clients.
                   </p>
                 </div>
          
-                <p class="pre-content">
+                <p class="pre-content fadeIn delay-3">
                   Our experience, team focused solutions oriented to build and operated with the highest integrity by providing the best quality project on time and on budget in a safely manner
                 </p>
-                <p class="pre-content">
+                <p class="pre-content fadeIn delay-4">
                   We look forward to serving the national capital region (NCR), and beyond. 
                 </p>
 
@@ -171,7 +179,21 @@
     
     <footer>
       <section>
-        
+        <!--<div class="divider fadeIn"></div>-->
+        <div class="sqs-block-content preScale scaleIn" 
+        style="transition-timing-function: ease; transition-duration: 0.65s; transition-delay: 0.572308s;">
+          <hr>
+        </div>
+        <div class="footer-bottom text-center pb-5">
+        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+          <small class="copyright">
+            Designed with <span class="sr-only">love</span><i class="fas fa-heart" style="color: #fb866a;"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers
+          </small>
+	      </div>
+
+        <div class="sqs-html-content" data-sqsp-text-block-content="">
+          <p class="preFade fadeIn" style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.65s; transition-delay: 0.590769s;">© 2026 Westview Projects. All Rights Reserved. Website by <a href="https://www.hawnconsulting.com/" target="_blank">Hawn Consulting</a>.</p>
+        </div>
       </section>
     </footer>
   </div>
@@ -221,6 +243,21 @@
       if (e.key === 'ArrowLeft')  goTo(current - 1);
       if (e.key === 'ArrowRight') goTo(current + 1);
     });
+
+    //////fade-in text
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target); // animate once only
+        }
+      });
+    }, {
+      threshold: 0.15  // trigger when 15% of element is visible
+    });
+
+    // oldie> .fade-in
+    document.querySelectorAll('.fadeIn').forEach(el => observer.observe(el));
   </script>
 </body>
 
