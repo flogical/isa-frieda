@@ -4,11 +4,65 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>FAMC INC.</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400&display=swap" rel="stylesheet"/>
+  
+  <!--<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400&display=swap" rel="stylesheet"/>-->
   
   <link href="../css/main.css" rel="stylesheet">
-  <link href="../css/navMenu.css" rel="stylesheet">
+  <link href="../css/navMenu.css" rel="stylesheet"> 
+<style type="text/css">
 
+
+body, h1, p {
+  font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  margin-left:  auto;
+  margin-right:  auto;
+  margin-top: 177px;
+  max-width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.row:before, .row:after {
+  display: table;
+  content: " ";
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+.col-md-push-3 {
+  margin-left: 25%;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+}
+
+.lead {
+  font-size: 21px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+a {
+  color: #3282e6;
+  text-decoration: none;
+}
+</style>
 </head>
 <body>
   <div id="siteWrapper" class="clearfix site-wrapper">
@@ -34,7 +88,7 @@
               <ul class="nav-links">
                 <li><a href="../about.html">About</a></li>
                 <li><a href="../services/service1.html">Services</a></li>
-                <li><a href="../portfolio/portfolio1.html" class="active">Projects</a></li>
+                <li><a href="../projects/underConstruction.html" class="active">Projects</a></li>
                 <li><a href="../contact-us.html" class="nav-cta">Contact</a></li>
               </ul>
 
@@ -57,7 +111,7 @@
             <div class="mobile-menu" id="mobileMenu" role="navigation">
               <a href="../about.html">About</a>
               <a href="../services/service1.html">Services</a>
-              <a href="../portfolio/portfolio1.html" class="active">Projects</a>
+              <a href="../projects/underConstruction.html" class="active">Projects</a>
               <a href="../contact-us.html" class="mobile-cta">Contact</a>
             </div>
           </nav>
@@ -66,7 +120,7 @@
     </header>
 
     <main id="page" class="container" role="main">
-      <article>
+      <!--<article>
         <section class="pre-content">
           <h3 style="text-align: center; white-space: pre-wrap; transition-timing-function: ease; transition-duration: 1.5s; transition-delay: 0.4s;" class="preFade fadeIn">
             We wanted to showcase some homes we have worked on for our valued clients. These home range from concepts, to homes awaiting construction soon. 
@@ -103,7 +157,24 @@
 
           </div>
         </section>
-      </article>
+      </article>-->
+      <div class="container text-center" id="error"><!-- #c9a96e -->
+        <svg height="100" width="100">
+            <polygon points="50,25 17,80 82,80" stroke-linejoin="round" style="fill:none;stroke:#ff8a00;stroke-width:8" />
+            <text x="42" y="74" fill="#ff8a00" font-family="sans-serif" font-weight="900" font-size="42px">!</text>
+        </svg>
+        <div class="row">
+            <div class="col-md-12">
+            <div class="main-icon text-warning"><span class="uxicon uxicon-alert"></span></div>
+                <h1>Under Construction</h1>
+            </div>
+        </div>
+       <!--<div class="row">
+            <div class="col-md-6 col-md-push-3">
+            <p class="lead">If you think what you're looking for should be here, please contact the site owner.</p>
+            </div>
+        </div>-->
+      </div>
     </main>
     
     <footer>

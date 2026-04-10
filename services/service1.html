@@ -8,6 +8,33 @@
   
   <link href="../css/main.css" rel="stylesheet">
   <link href="../css/navMenu.css" rel="stylesheet">
+  <style>
+    .footer-col h4 {
+      
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #c9a96e;
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+
+    .footer-col ul a {
+      
+      font-weight: 300;
+      color: rgba(240,235,227,0.5);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-col ul a:hover { color: #f0ebe3; }
+  </style>
 
 </head>
 <body>
@@ -37,7 +64,7 @@
                 <ul class="nav-links">
                   <li><a href="../about.html">About</a></li>
                   <li><a href="../services/service1.html" class="active">Services</a></li>
-                  <li><a href="../portfolio/portfolio1.html">Projects</a></li>
+                  <li><a href="../projects/underConstruction.html">Projects</a></li>
                   <li><a href="../contact-us.html" class="nav-cta">Contact</a></li>
                 </ul>
 
@@ -61,7 +88,7 @@
               <div class="mobile-menu" id="mobileMenu" role="navigation">
                 <a href="../about.html">About</a>
                 <a href="../services/service1.html" class="active"> Services</a>
-                <a href="../portfolio/portfolio1.html"> Projects</a>
+                <a href="../projects/underConstruction.html"> Projects</a>
                 <a href="../contact-us.html" class="mobile-cta"> Contact</a>
               </div>
             </nav>
@@ -71,15 +98,15 @@
 
     <main id="page" class="container" role="main">
       <article>
-        <section class="pre-content">
+        <!--<section class="pre-content">
           <h3 style="text-align: center; white-space: pre-wrap; transition-timing-function: ease; transition-duration: 1.5s; transition-delay: 0.4s;" class="preFade fadeIn">
             We wanted to showcase some homes we have worked on for our valued clients. These home range from concepts, to homes awaiting construction soon. 
           </h3>
-        </section>
+        </section>-->
 
-        <section>
+        <section class="pre-content">
           <div class="content">
-            <a class="grid-item" href="#">
+           <!-- <a class="grid-item" href="#">
               <div class="grid-image">
                 <div class="grid-image-inner-wrapper">
                   <img src="../assets/crane.jpg" alt="Crane picture">
@@ -105,7 +132,18 @@
                     Detached homes - Alta Vista - Ottawa
                   </h3>
                 </div>
-            </a>
+            </a> -->
+
+            <div style="text-align: center; white-space: pre-wrap; transition-timing-function: ease; transition-duration: 1.5s; transition-delay: 0.4s;" class="preFade fadeIn footer-col">
+              <h4>Our Services</h4>
+              <ul>
+                <li><a href="#">Construction Management</a></li>
+                <li><a href="#">Design Build Services</a></li>
+                <li><a href="#">Construction Documents review</a></li>
+                <li><a href="#">Site Management</a></li>
+                <li><a href="#">Lump sum projects</a></li>
+              </ul>
+            </div>
 
           </div>
         </section>
