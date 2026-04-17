@@ -13,6 +13,15 @@
   <script src="js/jquery-3.7.1.min.js"></script>
 
 </head>
+<!-- Google tag (gtag.js) umm right after head?~?-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4H0J31WM3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q4H0J31WM3');
+</script>
 <body>
   <div id="siteWrapper" class="clearfix site-wrapper">
 
@@ -84,7 +93,9 @@
             <input type="text" name="gotcha" class="gotcha" />
                 
             <input type="text" id="email" placeholder="Email"/>
-                
+
+            <input type="text" id="phone" placeholder="(XXX) XXX-XXXX"/>
+
             <input type="text" id="object" placeholder="Object"/> <!--would be dropdown instead-->
                 
             <textarea id="message" placeholder="Message"></textarea>

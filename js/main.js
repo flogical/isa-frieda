@@ -31,13 +31,14 @@ jQuery(document).ready(function($){
 	$('#btn').click(function() {
 		var name = $('#name').val();
         var email = $('#email').val();
+		var phone = $('#phone').val();
         var object = $('#object').val();
 		var message = $('#message').val();
         var ajaxurl = "https://formspree.io/f/xbdaajwj";
 		var gotcha = document.getElementsByName("gotcha");//filtering spam so that dont reach limit(50 per month)
 
 		//console.log('click= '+email,gotcha.length,JSON.stringify(gotcha),JSON.stringify(gotcha[0]),gotcha[0].innerHTML); 
-        data =  {'email': email, 'name':name, 'object':object, 'message':message,'_gotcha': gotcha[0].innerHTML};
+        data =  {'email': email, 'name':name, 'phone':phone, 'object':object, 'message':message,'_gotcha': gotcha[0].innerHTML};
         
 		var return_message = $('#returnmessage');
 

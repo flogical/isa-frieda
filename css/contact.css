@@ -40,7 +40,7 @@ input:focus, textarea:focus {
     margin-top: 2rem;
 }
 
-#name,#email,#object,#message {
+#name,#email,#object,#message,#phone {
     background-color:transparent;
 	border-top: none;
 	border-right: none;
